@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+        <a class="navbar-brand ml-5" href="#">
+          <img
+            src="https://w7.pngwing.com/pngs/116/858/png-transparent-computer-icons-meal-food-meal-icon-food-logo-eating.png"
+            alt="logo"
+            width="50vh"
+            class="rounded-circle"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav text-white mr-5">
+            <a class="nav-item nav-link active text-white" href="#">Home</a>
+            <a class="nav-item nav-link ml-5 text-white" href="#">About</a>
+            <a class="nav-item nav-link ml-5 text-white" href="#">Recipe</a>
+            <a class="nav-item nav-link ml-5 text-white" href="#">Blog</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container">
+      <!-- Search Box Area -->
+      <div class="input-group my-5">
+        <input
+          type="text"
+          class="form-control border-0 bg-light p-4 rounded"
+          id="search-box"
+          placeholder="Search for Meal"
+        />
+        <div class="input-group-append">
+          <button onclick="searchMeal()" class="btn btn-danger">Search</button>
+        </div>
+      </div>
+      <!-- Search Box End -->
+
+      <div id="ingredients-box" style="display: none"></div>
+
+      <!-- Food Card Area -->
+      <div id="meal-card" class="row row-cols-1 row-cols-md-4"></div>
+      <!-- Food Card End -->
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
